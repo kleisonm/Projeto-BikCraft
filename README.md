@@ -3,7 +3,7 @@ Este projeto foi criado com auxílio do curso da Origamid. Foram realizadas alte
 
 # Link Para Visualização do Site:
 
-<a href="https://kleisonm.github.io/Projeto-BikCraft/Bicicletas.html
+<a href="https://kleisonm.github.io/Projeto-BikCraft/index.html
 ">BikCraft
 </a>
 <br/>
