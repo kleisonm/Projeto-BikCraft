@@ -1,0 +1,35 @@
+.vantagens-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: start;
+    align-items: start;    
+    gap: 30px 60px;
+    padding: 1rem 0;
+}
+.vantagens-item{
+    display: grid;
+    gap: 10px ;
+    padding: 1rem 0;
+}
+.bicicletas-vantagens{
+    padding: 5rem 2rem;
+}
+
+@media (max-width:800px){
+    .vantagens-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .bicicletas-vantagens{
+        padding: 3rem 1.125rem;
+    }
+}
+@media (max-width:600px){
+    .vantagens-grid{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .bicicletas-vantagens{
+        padding: 2rem 1.25rem;
+    }
+}

@@ -1,0 +1,40 @@
+@import "Global/Global.css";
+
+@import "Introducao/Introducao.css";
+
+@import "Nav/nav.css";
+
+@import "Cores/Cores.css";
+
+@import "Tipografia/Tipografia.css";
+
+@import "Lista_Bicicletas/Lista-Bicicletas.css";
+
+@import "Tecnologia/Tecnologia.css";
+
+@import "Parceiros/Parceiros.css";
+
+@import "Depoimento/Depoimento.css";
+
+@import "Seguros/Seguros.css";
+
+@import "Footer/Footer.css";
+
+@import "Termos/Termos.css";
+
+@import "Bicicletas/Bicicletas.css";
+
+@import "Bicicletas_Seguros/Bicicletas_seguros.css";
+
+@import "Perguntas/Perguntas.css";
+
+@import "Bicicicletas_internas/Nimbus.css";
+
+@import "Seguros/Seguro-alternativo.css";
+
+@import "Contato/Contato.css";
+
+@import "Contato/Lojas.css";
+
+@import "Orçamento/orçamento.css";
+

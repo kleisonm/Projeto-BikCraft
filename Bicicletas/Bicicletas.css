@@ -1,0 +1,111 @@
+.bik-title{
+    padding-top: 1rem;
+}
+.bik-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+}
+.bicicletas{
+    padding: 3rem 0;
+}
+
+.descricao-bik{
+    display: grid;
+    grid-template-columns: 1fr auto ;
+    padding: 1rem 0;    
+}
+.especificacao img{
+    width: 25px;
+    height: 25px;
+}
+.especificacao{
+    display: grid;
+    gap: 10px;
+    font-size: 1.125rem;
+    grid-template-columns: 1fr;
+}
+.especificacao li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.botao-sobre{
+    display: flex;
+    align-items: center;
+    align-self: end;
+}
+.img-bicicletas{
+    display: grid;
+}
+.img-bicicletas span{
+    grid-area: 1/1;
+    place-self: start end;
+    color: var(--cor-2);
+    font-size: 1.125rem;
+    margin-top: 20px;
+    background: var(--cor-12);
+    display: inline-block;
+    padding: 8px 16px 8px 8px;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+}
+.img-bicicletas img{
+    grid-column: 1/1;
+}
+.container-bik{
+    position: relative;
+    padding: 3rem 0;
+}
+
+.container-bik::before{
+    content: "";
+    background-color: var(--cor-p1);
+    width: 20px;
+    height: 10px;
+    display: block;
+    margin-bottom: 5px;
+}
+.bg-alternativo{
+    background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+.botao-sobre .seta::after{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    background-image: url("../Img/icones/seta.svg");
+    margin-left: 8px;
+    transition: 0.3s;
+}
+.botao-sobre .seta:hover::after{
+    transform: translateX(4px);
+}
+@media (max-width: 800px){
+    .bik-grid{
+        grid-template-columns: 1fr;
+        gap: .75rem;
+    }
+    .bicicletas{
+        padding: 1rem 0;
+    }
+    .bg-alternativo{
+        background: var(--cor-11);
+    }
+    .container-bik{
+        padding: .5rem 0;
+    }
+}
+
+@media (max-width: 500px){
+    .descricao-bik{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .especificacao{
+        grid-template-columns: 1fr 1fr;
+    }
+}

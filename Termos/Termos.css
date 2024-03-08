@@ -1,0 +1,20 @@
+.termos-title{
+    padding-top: 1rem;
+}
+.termos{
+    padding: 1rem 0;
+    max-width: 80ch;
+}
+.termos2{
+    padding: 2rem 1rem;
+}
+.termos h3{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.termos p{ 
+    padding-bottom: 1rem;
+    line-height: 1.4;
+    color: var(--cor-9);
+}

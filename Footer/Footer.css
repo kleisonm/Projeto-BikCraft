@@ -1,0 +1,38 @@
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 1.5rem;
+    gap: 30px;
+}
+.footer-grid li, a{
+    font-size: 1.125rem;
+    color: var(--cor-6);
+    padding-bottom: 1rem;
+}
+.footer-grid a:hover{
+    color: var(--cor-1);
+}
+.footer-redes{
+    display: flex;
+    gap: 20px;
+    padding: 1rem 0;
+}
+.rodape{
+    grid-column: 1/-1;
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
+}
+@media (max-width:800px){
+    .footer-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .img-footer{
+        display: none;
+    }
+}
+@media (max-width:600px){
+    .footer-grid{
+        grid-template-columns: 1fr;
+    }
+}

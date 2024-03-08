@@ -1,0 +1,184 @@
+.orcamento-container{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    align-items: start;
+}
+.orcamento-produto{
+    grid-row: 1 / 3;
+    background-color: var(--cor-12);
+    padding: 2rem;
+    border-radius: 4px 0px 0px 4px;
+}
+.orcamento-produto label{
+    color: var(--cor-4);
+    background-color: var(--cor-10);
+    padding: 15px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.orcamento-conteudo{
+    display: none;
+}
+#bikcraft:checked ~ #orcamento-bickcraft,
+#seguro:checked ~ #orcamento-seguro{
+    display: grid;
+}
+.orcamento-dados, .entrega{
+    padding: 2rem;
+    border: 1px solid var(--cor-2);
+}
+
+/*DADOS DA BICKCRAFT*/
+.grid-conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: start;
+    background-color: var(--cor-1);
+    padding: 10px;
+}
+.conteudo-bickcraft label{
+    width: 100%;
+}
+.conteudo-bickcraft input:checked + label, 
+.orcamento-produto input:checked + label{
+    background-color: var(--cor-1);
+    color: var(--cor-12);
+    border: 2px solid var(--cor-p1);
+    box-shadow: 0px 0px 3px var(--cor-p1);
+}
+.conteudo-bickcraft input, 
+.orcamento-produto input{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.grid-conteudo ul li{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--cor-8);
+    gap: 5px;
+    padding-bottom: 5px;
+}
+.grid-conteudo ul img{
+    width: 20px;
+}
+
+.grid-conteudo{
+    display: none;
+}
+#nimbus:checked ~ .grid-conteudo,
+#magic:checked ~ .grid-conteudo,
+#nebula:checked ~ .grid-conteudo{
+    display: grid;
+}
+.grid-conteudo:checked{
+    margin-bottom: 10px;
+}
+.conteudo-bickcraft{
+    display: block;
+}
+/*FINAL DA BICKCRAFT*/
+
+/*DADOS DO SEGURO*/
+.seguro-prata label,
+.seguro-ouro label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* DADOS DO CLIENTE*/
+.entrega, .orcamento-dados{
+    grid-column: 2;
+}
+.orcamento-produto h3::before, 
+.orcamento-conteudo h3::before,
+.orcamento-dados h3::before,
+.entrega h3::before {
+    content: "";
+    display: inline-block;
+    background-color: var(--cor-p1);
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    left: -10px;
+}
+.orcamento-produto h3, 
+.orcamento-conteudo h3,
+.orcamento-dados h3,
+.entrega h3{
+    position: relative;
+}
+
+.orcamento-dados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    border-radius: 0px 4px 0px 0px;
+}
+.orcamento-dados input{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--cor-1);
+    outline: none;
+    border: 1px solid var(--cor-2);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.orcamento-dados h3, .cpf, .email, .entrega h3{
+    grid-column: 1/-1;
+}
+
+.entrega{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 10px;
+    border-radius: 0px 0px 4px 0px;
+}
+.entrega input{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--cor-1);
+    outline: none;
+    border: 1px solid var(--cor-2);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.btn-orcamento{
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.form input:focus,
+.entrega input:focus{
+    border: 2px solid var(--cor-p1);
+}
+/*FIM DADOS DO CLIENTE*/
+
+
+@media (max-width:800px){
+    .orcamento-container{
+        grid-template-columns: 1fr;
+    }
+    .entrega, .orcamento-dados{
+        grid-column: 1;
+    }
+    .name, .sobrenome{
+        grid-column: 1/-1;
+    }
+    .entrega{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width:350px){
+    .grid-conteudo{
+grid-template-columns: 1fr;    
+}
+}

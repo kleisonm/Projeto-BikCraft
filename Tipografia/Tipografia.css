@@ -1,0 +1,106 @@
+.font-1-lg{
+    font-size: 4.25rem;
+    padding-bottom: 1.5rem;
+}
+.font-txt-1{
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+}
+.font-2-lg{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0; 
+}
+.font-txt-2{
+    padding-bottom: 10px;
+    font-size: 1.125rem;
+}
+.font-3-m-b{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.font-4-p{
+    font-size: 1.125rem;
+    padding-bottom: .5rem;
+    font-weight: 400;
+}
+.font-5-m{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.font-6-mb{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.font-txt-pp{
+    font-size: .75rem;
+    text-align: right;
+    font-weight: bold;
+}
+.font-7-m{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.font-8-p{
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.txt-p{
+    line-height: 1.5;
+}
+
+@media screen and (max-width:800px){
+    .font-1-lg{
+        font-size: 2rem;
+        padding: .5rem 0;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .btn-alternativo{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .font-2-lg{
+        font-size: 1.5rem;
+    }
+    .font-5-m{
+        font-size: 1.5rem;
+    }
+    .font-6-mb{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:700px){
+    .font-1-lg{
+        font-size: 2rem;
+    }
+    .font-txt-1{
+        font-size: 1rem;
+    }
+    .font-3-m-b{
+        font-size: 1.125rem;
+    }
+    .btn{
+        font-size: .75rem;
+        padding: 10px 15px;
+    }
+    .btn-alternativo{
+        font-size: .75rem;
+        padding: 10px 15px;
+    }
+}
+@media (max-width: 380px){
+    .font-txt-1{
+        font-size: 1rem;
+    }
+    .font-7-m{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
